@@ -1387,7 +1387,7 @@ input[type="text"].tag_name {
   min-width: 231px;
   background-color: orange;
   color: #000;
-  text-trans.form: lowercase; }
+  text-transform: lowercase; }
 
 .img, .before, .butospan, .bg-img {
   display: inline-block;

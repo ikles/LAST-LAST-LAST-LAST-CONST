@@ -726,9 +726,9 @@ $('body').keydown(function(e) {
 
 // alt + лево 37 пред сосед
 
-$('body').keydown(function(e) {
-  e.preventDefault();
+$('body').keydown(function(e) {  
   if (e.altKey && e.keyCode == 37) {
+    e.preventDefault();
 
 
     if( $('#active').prev().length > 0 ) {
@@ -2061,6 +2061,52 @@ $('.coll-7').click(function () {
   $('#active').append(col7);
   main_function();
 });
+
+
+$('#coluu_2').click(function () {
+  $('#active').append(
+`<div class="w-row"><div class="contain"><div class="w-row" style="display: flex; justify-content: space-between;"><div class="w-col-6" style="width: 50%;"></div><div class="w-col-6" style="width: 50%;"></div></div></div></div>`
+    );
+  main_function();
+});
+
+$('#coluu_3').click(function () {
+  $('#active').append(
+`<div class="w-row"><div class="contain"><div class="w-row" style="display: flex; justify-content: space-between;"><div class="w-col-4" style="width: 33.3333%;"></div></div></div></div>`
+    );
+  main_function();
+});
+
+$('#coluu_4').click(function () {
+  $('#active').append(
+`<div class="w-row"><div class="contain"><div class="w-row" style="display: flex; justify-content: space-between;">
+<div class="w-col-3" style="width: 25%;"></div></div></div></div>`
+    );
+  main_function();
+});
+
+$('#coluu_5').click(function () {
+  $('#active').append(
+`<div class="w-row"><div class="contain"><div class="w-row" style="display: flex; justify-content: space-between;"><div class="w-row" style="width: 20%;"></div></div></div></div>`
+    );
+  main_function();
+});
+
+$('#coluu_6').click(function () {
+  $('#active').append(
+`<div class="w-row"><div class="contain"><div class="w-row" style="display: flex; justify-content: space-between;"><div class="w-col-2" style="width: 16.6667%;"></div></div></div></div>`
+    );
+  main_function();
+});
+
+$('#coluu_w').click(function () {
+  $('#active').append(
+`<div class="w-row"><div class="contain"><div class="w-row" style="display: flex; justify-content: space-between;"></div></div></div>`
+    );
+  main_function();
+});
+
+
 
 $('.rw').click(function () {
   $('#active').append(rw);
